@@ -15,7 +15,7 @@ import java.util.TreeSet;
  * @author hanoseok
  *
  */
-public class ReflectionUtil {
+public class ReflectionUtils {
 	
 	private static ThreadLocal<List<Object>> stack = new ThreadLocal<List<Object>>();
 

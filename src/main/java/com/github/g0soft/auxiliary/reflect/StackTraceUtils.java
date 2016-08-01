@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 /**
  * @author hanoseok
  */
-public class StackTraceUtil {
+public class StackTraceUtils {
 	
 	public final static int ALL_LINE = Integer.MAX_VALUE;
 	

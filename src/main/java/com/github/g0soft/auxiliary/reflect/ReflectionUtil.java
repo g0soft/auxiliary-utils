@@ -31,8 +31,8 @@ public class ReflectionUtil {
 	 * 큰 객체는 성능저하를 가지고 올 수 있으며,
 	 * StackOverFlow 가 발생할 수 있을 가능성이 있으니,
 	 * 주의해서 사용해야 한다. 
-	 * @param o
-	 * @return
+	 * @param o Object
+	 * @return Recursive Reflected Object
 	 */
 	public static String toStringRecursive(Object o) {
 		try{
@@ -48,9 +48,9 @@ public class ReflectionUtil {
 	 * RecursiveReflection 을 이용하여 인스턴스가 다른 객체가 실제로 같은 값을 가지는지 비교한다.
 	 * Depth가 큰 객체는 100% 믿을 수 없지만 어느정도 크기의 객체는 필드에 같은 값들이 세팅되어 있는지 확인이 가능하다.
 	 * 성능저하 및 StackOverFlow 발생가능성이 있으니 주의하여 사용해야 한다.
-	 * @param o1
-	 * @param o2
-	 * @return
+	 * @param o1 비교 Object 1
+	 * @param o2 비교 Object 2
+	 * @return o1 == o2
 	 */
 	public static boolean isEqualsValue(Object o1, Object o2) {
 		return toStringRecursive(o1).equals(toStringRecursive(o2));

@@ -1,4 +1,4 @@
-package com.github.g0soft.auxiliary.reflect;
+package com.github.g0soft.auxiliary.utils;
 
 import java.lang.reflect.Method;
 

@@ -1,7 +1,66 @@
-bin
-target
-.classpath
-.settings
-.project
+# Created by .ignore support plugin (hsz.mobi)
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# IntelliJ project files
 .idea
 *.iml
+
+### Android template
+# Built application files
+*.apk
+*.ap_
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+build/
+target/
+
+# Gradle files
+.gradle/
+
+# Log Files
+*.log
+
+
+### Eclipse template
+.metadata
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+.settings/
+.loadpath
+.recommenders
+.project
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# sbteclipse plugin
+.target
+
+
+# STS (Spring Tool Suite)
+.springBeans

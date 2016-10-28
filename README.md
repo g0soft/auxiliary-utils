@@ -23,29 +23,38 @@ Features:
   2. mvn package 후에 java -jar target/swe-hw-calculator.jar 실행
 
 ## Calculator 설명
-> SpringBoot Framework 를 사용하여 작성하였습니다
-> 이유는 입력방법에 대한 고민을 하다가 Web 또는 콘솔 아니면 GUI 로도 가장 빠르게 변환 할 수 있는 프레임워크라고 생각했습니다
-> 또한 Spring DI 를 쉽게 사용할 수 있는 장점이 있다고 판단하였습니다 
-> 
-> Homework 은 Application 에서 CommandCalculator Bean 을 실행시키는 부분에서 시작합니다.
-> CommandCalculator 는 Calculator 의 run 을 상속받아 콘솔에서 실행되도록 구현하였습니다.
-> 
-> CommandCalculator 에서는 문자변수를 치환하고 CalculateService 로 수식을 넘겨서 계산결과값을 받아옵니다.
-> (문자변수 치환의 경우에는 위 Case2, 3 에서의 abcde 등 한개의 캐릭터가 한개의 숫자를 추가로 입력받는 것으로 이해하고 구현하였습니다)
+* SpringBoot Framework 를 사용하여 작성하였습니다
+
+이유는 입력방법에 대한 고민을 하다가 Web 또는 콘솔 아니면 GUI 로도 가장 빠르게 변환 할 수 있는 프레임워크라고 생각했습니다
+
+또한 Spring DI 를 쉽게 사용할 수 있는 장점이 있다고 판단하였습니다 
+
+* Homework 은 Application 에서 CommandCalculator Bean 을 실행시키는 부분에서 시작합니다.
+
+CommandCalculator 는 Calculator 의 run 을 상속받아 콘솔에서 실행되도록 구현하였습니다.
+
+CommandCalculator 에서는 문자변수를 치환하고 CalculateService 로 수식을 넘겨서 계산결과값을 받아옵니다.
+
+(문자변수 치환의 경우에는 위 Case2, 3 에서의 abcde 등 한개의 캐릭터가 한개의 숫자를 추가로 입력받는 것으로 이해하고 구현하였습니다)
  
-> 계산식은 가장 보편적으로 사용되는 방법인 후위표현식으로 전환하여 계산하는 방법을 택했습니다
-> CalculateService의 calculate 에서는 
+계산식은 가장 보편적으로 사용되는 방법인 후위표현식으로 전환하여 계산하는 방법을 택했습니다
+
+* CalculateService의 calculate 에서는 
 1. 수식의 숫자, 부호, 괄호등을 정규식으로 나누기
 2. 수식의 문법이 적법한지 판별하기
 3. 중위표현식으로 나뉘어진 수식을 후위표현식으로 변환하기 (Stack, LinkedList 사용)
 4. 우선순위에 맞추어 계산하기
-> 와 같은 순서로 계산되어집니다.
 
-> 추가적으로 수식표현개체는 Expression enum 으로 패턴구분 타입구분 및 우선순위에 대한 부분을 판별 합니다.
-> Stack, LinkedList 에서 사용하기 위해서 Node 로 실제 Value 와 Expression 을 가진 구조체를 만들었습니다.
+와 같은 순서로 계산되어집니다.
 
-또한 계산 부분에 있어서는 CalculateService 에 집중될 수 있는 무거운 로직을 줄이기 위하여,
+* 추가적으로 수식표현개체는 Expression enum 으로 패턴구분 타입구분 및 우선순위에 대한 부분을 판별 합니다.
+
+Stack, LinkedList 에서 사용하기 위해서 Node 로 실제 Value 와 Expression 을 가진 구조체를 만들었습니다.
+
+* 계산 부분에 있어서는 CalculateService 에 집중될 수 있는 무거운 로직을 줄이기 위하여,
+
 계산로직을 제외한 validation check, stack, list 만들기 등이 작업을 CalculatorOperator 에서 처리하도록 하였으며,
+
 유틸리티성 메소드를 가지고 있는 CalculatorUtils 를 구현하였습니다
 
 ## Package 설명 

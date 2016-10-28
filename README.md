@@ -23,9 +23,9 @@ Features:
   2. mvn package 후에 java -jar target/swe-hw-calculator.jar 실행
 
 ## Calculator 설명
-* SpringBoot Framework 를 사용하여 작성하였습니다
-    이유는 입력방법에 대한 고민을 하다가 Web 또는 콘솔 아니면 GUI 로도 가장 빠르게 변환 할 수 있는 프레임워크라고 생각했습니다
-    또한 Spring DI 를 쉽게 사용할 수 있는 장점이 있다고 판단하였습니다 
+* SpringBoot Framework 를 사용하여 작성하였습니다 <br/>
+    이유는 입력방법에 대한 고민을 하다가 Web 또는 콘솔 아니면 GUI 로도 가장 빠르게 변환 할 수 있는 프레임워크라고 생각했습니다 <br/>
+    또한 Spring DI 를 쉽게 사용할 수 있는 장점이 있다고 판단하였습니다 <br/>
 
 * Homework 은 Application 에서 CommandCalculator Bean 을 실행시키는 부분에서 시작합니다.
     CommandCalculator 는 Calculator 의 run 을 상속받아 콘솔에서 실행되도록 구현하였습니다.

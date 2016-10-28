@@ -33,7 +33,8 @@ CommandCalculator 에서는 문자변수를 치환하고 CalculateService 로 �
 (문자변수 치환의 경우에는 위 Case2, 3 에서의 abcde 등 한개의 캐릭터가 한개의 숫자를 추가로 입력받는 것으로 이해하고 구현하였습니다) <br/>
 
 * 계산식은 가장 보편적으로 사용되는 방법인 후위표현식으로 전환하여 계산하는 방법을 택했습니다 <br/>
-* CalculateService의 calculate 에서는  <br/>
+
+* CalculateService의 calculate 에서는
     1. 수식의 숫자, 부호, 괄호등을 정규식으로 나누기
     2. 수식의 문법이 적법한지 판별하기
     3. 중위표현식으로 나뉘어진 수식을 후위표현식으로 변환하기 (Stack, LinkedList 사용)
@@ -50,18 +51,18 @@ CommandCalculator 에서는 문자변수를 치환하고 CalculateService 로 �
 
 ## Package 설명 
 * 표준 Maven 디렉토리 구조를 가지고 있습니다 <br/>
-<code>
+<pre><code>
 src-main-java : Main Java 코드가 위치한 디렉토리
 src-main-test : Test 코드가 위치한 디렉토리
 
-com.riotgames.recruit.calculator : Spring Boot Application 이 위치한 상위 패키지
-com.riotgames.recruit.calculator.application : UI (App) 가 위치한 패키지
-com.riotgames.recruit.calculator.exception : 예외사항 패키지
-com.riotgames.recruit.calculator.expression : 숫자 부호 괄호등 수식의 메타 정보를 가지고 있는 클래스가 위치한 패키지
-com.riotgames.recruit.calculator.structure : 계산기의 구조체 관련된 클래스가 위치한 패키지 
-com.riotgames.recruit.calculator.service : 비지니스 로직이 위치한 패키지
-com.riotgames.recruit.calculator.utility : 유틸리티성 클래스가 위치한 패키지 
-</code>
+com.riotgames.recruit.calculator : Spring Boot Application 이 위치한 상위 패키지<br/>
+com.riotgames.recruit.calculator.application : UI (App) 가 위치한 패키지<br/>
+com.riotgames.recruit.calculator.exception : 예외사항 패키지<br/>
+com.riotgames.recruit.calculator.expression : 숫자 부호 괄호등 수식의 메타 정보를 가지고 있는 클래스가 위치한 패키지<br/>
+com.riotgames.recruit.calculator.structure : 계산기의 구조체 관련된 클래스가 위치한 패키지 <br/>
+com.riotgames.recruit.calculator.service : 비지니스 로직이 위치한 패키지<br/>
+com.riotgames.recruit.calculator.utility : 유틸리티성 클래스가 위치한 패키지 <br/>
+</code></pre>
 
 ---
 

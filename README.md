@@ -52,9 +52,9 @@ CommandCalculator 에서는 문자변수를 치환하고 CalculateService 로 �
 ## Package 설명 
 * 표준 Maven 디렉토리 구조를 가지고 있습니다 <br/>
 <pre><code>
-src-main-java : Main Java 코드가 위치한 디렉토리
-src-main-test : Test 코드가 위치한 디렉토리
-
+src-main-java : Main Java 코드가 위치한 디렉토리<br/>
+src-main-test : Test 코드가 위치한 디렉토리<br/>
+<br/>
 com.riotgames.recruit.calculator : Spring Boot Application 이 위치한 상위 패키지<br/>
 com.riotgames.recruit.calculator.application : UI (App) 가 위치한 패키지<br/>
 com.riotgames.recruit.calculator.exception : 예외사항 패키지<br/>
